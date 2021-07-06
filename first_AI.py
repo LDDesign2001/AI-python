@@ -15,8 +15,9 @@ XPrediction = np.split(x_enter,[8])[1]
 class Neural_network(object):
     def __init__(self):
         #parameters
-        self.inputSize = 2
-        self.outputSize = 1
-        self.hiddenSize = 3
+        self.inputSize = 2 #neuronal entries
+        self.outputSize = 1 #neuronal outputs
+        self.hiddenSize = 3 #hidden neurons
         #our Weights
-        
+        self.W1 = np.random.randn(self.inputSize, self.hiddenSize) #2X3 Weight matrix between neurons entering and hidden
+        self.W2 = np.random.randn(self.hiddenSize, self.outputSize) #3X1 Weight matrix between hidden neurons and output
