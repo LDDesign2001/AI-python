@@ -81,9 +81,9 @@ NN = Neural_Network()
 
 for i in range(1000):  # Choose a number of iterations, be careful too many can create overfitting!
     print("# " + str(i) + "\n")
-    print("Valeurs d'entrées: \n" + str(X))
-    print("Sortie actuelle: \n" + str(y))
-    print("Sortie prédite: \n" + str(np.matrix.round(NN.forward(X), 2)))
+    print("Entry value: \n" + str(X))
+    print("Actual value: \n" + str(y))
+    print("Predicted output: \n" + str(np.matrix.round(NN.forward(X), 2)))
     print("\n")
     NN.train(X, y)
 
